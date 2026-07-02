@@ -61,7 +61,7 @@ bash modules/dev.sh
 
 if [[ "$MODE" == "full" ]]; then
   log "Instalando módulo IA..."
-  bash modules/ia.sh
+  bash modules/ai.sh
 fi
 
 success "Setup finalizado!"

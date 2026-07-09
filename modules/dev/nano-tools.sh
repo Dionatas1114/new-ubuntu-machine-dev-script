@@ -2,8 +2,6 @@
 
 set -e
 
-echo "[DEV] Instalando programas nano..."
-
 echo "[DEV] Instalando librewolf browser..."
 
 sudo apt update

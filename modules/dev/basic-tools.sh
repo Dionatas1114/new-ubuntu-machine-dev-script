@@ -2,6 +2,8 @@
 
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 echo "[DEV] Instalando ferramentas base..."
 
 sudo apt install -y \
@@ -49,3 +51,6 @@ sudo tee /etc/apt/sources.list.d/dbeaver.list
 
 sudo apt update
 sudo apt install -y dbeaver-ce
+
+echo "[DEV] Rodando configurações de desenvolvimento..."
+"$SCRIPT_DIR/dev-config.sh"
